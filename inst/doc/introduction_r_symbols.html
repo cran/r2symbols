@@ -12,7 +12,7 @@
 
 <meta name="author" content="Obinna Obianom" />
 
-<meta name="date" content="2022-08-14" />
+<meta name="date" content="2022-10-23" />
 
 <title>Introduction to r2symbols, An R Package for adding symbols to Rmarkdown and Shiny Apps</title>
 
@@ -335,25 +335,25 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h1 class="title toc-ignore">Introduction to r2symbols, An R Package for
 adding symbols to Rmarkdown and Shiny Apps</h1>
 <h4 class="author">Obinna Obianom</h4>
-<h4 class="date">2022-08-14</h4>
+<h4 class="date">2022-10-23</h4>
 
 
 
 <div id="brief" class="section level2">
 <h2>Brief</h2>
-<p>r2symbols is a part of the R2R package family - <a href="http://coursewhiz.org" class="uri">http://coursewhiz.org</a></p>
+<p>r2symbols is a part of the R2 R package family - <a href="https://r2symbols.obi.obianom.com" class="uri">https://r2symbols.obi.obianom.com</a></p>
 <p>In preparing Rmarkdown documents and Shiny applications, symbols or
 special characters or greek letters or currencies e.t.c may be sort
 after to make the final output look more appealing or professional.
 R2symbols is an R package that makes this possible. Prior to the
-development of this package, many authors have preferrably used LaTex
+development of this package, many authors have preferrably used LaTeX
 codes to accomplish this. The downside to doing this are as follows
 -</p>
 <ul>
-<li>You have to know how to write LaTex codes and be able to mix them in
+<li>You have to know how to write LaTeX codes and be able to mix them in
 with R codes</li>
 <li>Some symbols or currencies sort after are sometimes not available
-with LaTex</li>
+with LaTeX</li>
 <li>The final output of Rmarkdown knitting or Shiny app rendering is
 HTML embedded with the mathjax script. This is an extra script that must
 be incorporated into the document for the units or symbols to convert
@@ -364,7 +364,7 @@ browser for the process to carry on.</li>
 HTML codes available for many of these symbols, so this package simply
 incorporates the appropriate symbol into the document and in the final
 ouput, mathjax script is not needed for it to show up properly.
-Additionally, the code you will be writing is all R code and no LaTex is
+Additionally, the code you will be writing is all R code and no LaTeX is
 needed.</p>
 </div>
 <div id="examples" class="section level2">
@@ -389,12 +389,12 @@ needed.</p>
 <h3>Attach the library, establish global settings for the symbols and
 then request symbols</h3>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r2symbols)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>(<span class="at">font.size=</span><span class="dv">40</span>,<span class="at">font.weight =</span><span class="st">&quot;normal&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;purple&quot;</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;copyright&quot;</span>,<span class="st">&quot;heart&quot;</span>)</span></code></pre></div>
-<p><span style="font-size:40px!important;font-weight:normal!important;color:purple!important;">©</span><span style="font-size:40px!important;font-weight:normal!important;color:purple!important;">♥</span></p>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>(<span class="at">font.size=</span><span class="dv">40</span>,<span class="at">font.weight =</span><span class="st">&quot;normal&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;blue&quot;</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol</span>(<span class="st">&quot;copyright&quot;</span>,<span class="st">&quot;heart&quot;</span>,<span class="st">&quot;chessq&quot;</span>)</span></code></pre></div>
+<p><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">©</span><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">♥</span><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">♕</span></p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#OR use alias</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sym</span>(<span class="st">&quot;naira&quot;</span>,<span class="st">&quot;yen&quot;</span>)</span></code></pre></div>
-<p><span style="font-size:40px!important;font-weight:normal!important;color:purple!important;">₦</span><span style="font-size:40px!important;font-weight:normal!important;color:purple!important;">¥</span></p>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sym</span>(<span class="st">&quot;naira&quot;</span>,<span class="st">&quot;yen&quot;</span>,<span class="st">&quot;music1&quot;</span>)</span></code></pre></div>
+<p><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">₦</span><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">¥</span><span style="font-size:40px!important;font-weight:normal!important;color:blue!important;">♫</span></p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#change settings anytime</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">symbol.setting</span>(<span class="at">font.size=</span><span class="dv">30</span>,<span class="at">font.weight =</span><span class="st">&quot;bold&quot;</span>,<span class="at">font.color =</span> <span class="st">&quot;red&quot;</span>)</span>
