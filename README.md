@@ -1,17 +1,16 @@
-# The r2Symbols R package : Direct insertion of HTML symbol entities for use in Rmarkdown, Quarto and Shiny Applications
+# r2Symbols R package : Direct insertion of over 1000 HTML symbol entities in Rmarkdown, Quarto and Shiny Applications
 ## Official website: [https://r2symbols.obi.obianom.com](https://r2symbols.obi.obianom.com/articles/newversion_r_symbols.html)
+### Other packages required for r2symbols: https://depends.rpkg.net/package/r2symbols
 
 [![CRAN\_Status\_Badge](https://img.shields.io/badge/rPkgNet-published-orange)](https://rnetwork.obi.obianom.com/package/r2symbols) <img src="https://rpkg.net/pub-age/r2symbols"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/grand-total/r2symbols)](https://cran.r-project.org/package=r2symbols)
 
-![ezgif-3-efa9cce31d](https://r2symbols.obi.obianom.com/ezgif-3-efa9cce31d.gif)
+[![ezgif-3-efa9cce31d](https://r2symbols.obi.obianom.com/symbols/assets/newlist.png)](https://r2symbols.obi.obianom.com/symbols/)
 
 ![](https://coursewhiz.org/mainsite/img/R2_logo2.png)
 
-#### Transform entire Rmarkdown & Quarto documents with symbols
-![](https://r2symbols.obi.obianom.com/cards/transr2symbols_carsd1.png) 
+ - [x] Transform entire Rmarkdown & Quarto documents with symbols
+ - [x] Get a desired symbol
 
-#### Get a desired symbol
-![](https://r2symbols.obi.obianom.com/cards/symbol_carsd1.png) 
 
 
 # Quick example in R 
