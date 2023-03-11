@@ -1,0 +1,60 @@
+---
+title: "Add Multiple Symbols by Keywords or Category in your Rmarkdown or Quarto documents or Shiny applications"
+author: "Obinna Obianom"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{Add Multiple Symbols by Keywords or Category in your Rmarkdown or Quarto documents or Shiny applications}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<style> body{border-top: 5px solid #CC7722; margin-top: 0; padding-top: 50px; margin: 0; max-width: unset!important;} h2{text-decoration: underline; color: brown;} p code{background-color: black; color: white; padding: 0px 7px;} pre.sourceCode{border:1px solid #CC7722;}</style>
+
+
+## Summary
+
+R2SYMBOLS package introduced two new functions that allows inclusion of multiple symbols by keyword. Below are further details on how to use these functions
+
+
+### Include library
+
+```{r}
+library(r2symbols)
+```
+### Use the symKey() function
+
+```{r}
+# fetch a group of symbols by using keywords
+symKey(keyword = "chess", font.size = 40)
+
+# when the keyword doesn't exist
+symKey(keyword = "chf34ess", font.size = 40)
+```
+
+```{r eval=FALSE}
+# when the keyword is not up to 4 characters
+symKey(keyword = "chf", font.size = 40) # retruns error
+```
+
+### Use the symCat() function
+
+```{r}
+# fetch a group of symbols by using category words
+# categories include: arrows mixed chess check mark symbol animal emoji flag people skull sign star telephone weather zodiac smiley hourglass fraction cards triangle square
+symCat(category = "arrow", font.color="blue", font.size = 20)
+symCat(category = "people", font.color="gray", font.weight = "light",font.size = 50)
+symCat(category = "emoji", font.color="gray", font.weight = "light",font.size = 22)
+symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32)
+```
+
+
+
+### Note
+
+All other cool features of r2symbols are still available. View them by going to https://r2symbols.obi.obianom.com/
+
